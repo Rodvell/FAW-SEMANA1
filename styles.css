@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: rgb(173, 2, 2);
+    color: black;
+}
+
+div {
+    margin: 5px;
+    padding: 5px;
+}
+
+.contgen{
+    height: 47vh;
+}
+
+.contgen, .alumtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.infor, .boxess, .alumtos {
+    height: 75%;
+}
+
+#foto, #equipo {
+    height: 90%;
+    border-radius: 15px;
+}
+
+.alumtos, .infor {
+    width: 47%;
+    border-style: solid;
+    border-color: white;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgba(241, 238, 209, 0.753);
+}
+
+.infor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.perfil {
+    justify-content: center;
+    height: 30vh;
+    width: 30vh;
+    position: static;
+    transition: all 0.5s ease;
+    transform: perspective(600px);
+    transform-origin: 100% 50%;
+    transform-style: preserve-3d;
+}
+
+.perfil:hover {
+    transform: perspective(600px) rotateY(180deg) translateX(105%);
+}
+
+.perfil .flip-1,
+.perfil .flip-2{
+    position: absolute;
+    backface-visibility: hidden;
+}
+.perfil .flip-2{
+    transform: rotateY(-180deg);
+}
+
+.personals {
+    width: 75%;
+}
+
+.boxess {
+    border-style: solid;
+    border-color: white;
+    margin: 5px;
+    padding: 5px;
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(241, 238, 209, 0.753);
+}
+
+#pagges {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+
+#pagges td, #pagges th {
+    border: 2px solid black;
+    padding: 9px;
+}
+
+.link-table {
+    height: 25px;
+}
+
+.bio {
+    padding: 15px;
+}
+
+.name, h2 {
+    font-weight: 600;
+    font-size: 3.5vh;
+}
+
+p {
+    font-size: 2.5dvh;
+}
